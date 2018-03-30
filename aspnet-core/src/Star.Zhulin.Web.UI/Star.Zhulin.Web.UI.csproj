@@ -12,7 +12,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\AboutUsEditController.cs" />
+    <Compile Remove="Controllers\AlbumController.cs" />
+    <Compile Remove="Controllers\AlbumEditController.cs" />
+    <Compile Remove="Controllers\AlbumManageController.cs" />
+    <Compile Remove="Controllers\CreationController.cs" />
+    <Compile Remove="Controllers\DossierController.cs" />
+    <Compile Remove="Controllers\LeftController.cs" />
+    <Compile Remove="Controllers\VideoController.cs" />
+    <Compile Remove="Controllers\VideoEditController.cs" />
+    <Compile Remove="Controllers\WallpaperController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>
