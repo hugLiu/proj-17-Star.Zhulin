@@ -119,11 +119,11 @@
 {
 if (ViewBag.ActiveTab == item)
 {
-@:class="active dropdown col-md-1-7 col-sm-1-7 col-xs-1-7";
+        @:class="active dropdown col-md-1-7 col-sm-1-7 col-xs-1-7";
     }
     else if (ViewBag.ActiveTab == "")
     {
-@:class="active dropdown col-md-1-7 col-sm-1-7 col-xs-1-7";
+        @:class="active dropdown col-md-1-7 col-sm-1-7 col-xs-1-7";
     }
 }
 
@@ -139,7 +139,7 @@ if (ViewBag.ActiveTab == item)
                                 <li class="dropdown col-md-1-7 col-sm-1-7 col-xs-1-7">
                                     <a aria-expanded="false" role="button" href="/recp/index" class="dropdown-toggle" style="cursor:pointer">返回首页</a>
                                 </li>
-                                <li @GetCssClass("dossier") class="dropdown col-md-1-7 col-sm-1-7 col-xs-1-7">
+                                <li @(GetCssClass("dossier")) class="dropdown col-md-1-7 col-sm-1-7 col-xs-1-7">
                                     <a aria-expanded="false" role="button" href="/dossier/index" class="dropdown-toggle" style="cursor:pointer"> 朱琳档案</a>
                                 </li>
                                 <li @GetCssClass("creation") class="dropdown col-md-1-7 col-sm-1-7 col-xs-1-7">
@@ -167,8 +167,8 @@ if (ViewBag.ActiveTab == item)
     <div class="case">
         <div class="container" style="padding: 0;width: 100%;height: 100%;">
             <div class="row" style="height: 100%;">
-                <div class="col-xs-4 col-sm-4  col-md-4  col-lg-3" style="padding: 0;height: 100%;">
-                    @RenderPage("~/Views/Left/Index.cshtml")
+                <div class="col-xs-4 col-sm-4  col-md-4  col-lg-3" style="padding: 0;height: 100%;"> 
+                    @await Html.PartialAsync("~/Views/Left/Index.cshtml")
                 </div>
                 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-9 " style="padding:0 0 0 10px;height: 100%;">
                     <div class="panel panel-default" style="height:100%;">
