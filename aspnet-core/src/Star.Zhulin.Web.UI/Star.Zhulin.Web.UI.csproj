@@ -5,11 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Content\zhulin\js\plugins\linq.js_ver2.2.0.2\bindings\RxVSDocGenerator\**" />
+    <Content Remove="Content\zhulin\js\plugins\linq.js_ver2.2.0.2\bindings\RxVSDocGenerator\**" />
+    <EmbeddedResource Remove="Content\zhulin\js\plugins\linq.js_ver2.2.0.2\bindings\RxVSDocGenerator\**" />
+    <None Remove="Content\zhulin\js\plugins\linq.js_ver2.2.0.2\bindings\RxVSDocGenerator\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Content\" />
   </ItemGroup>
 
 </Project>
