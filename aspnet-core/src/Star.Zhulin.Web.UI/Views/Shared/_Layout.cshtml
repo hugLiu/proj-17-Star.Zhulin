@@ -9,15 +9,15 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>朱琳影迷会__http://www.zhulin.net/</title>
     <!--css-->
-    <link href="~/Content/RECP/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/RECP/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="~/Content/RECP/css/font-awesome-ie7.min.css" rel="stylesheet" />
-    <link href="~/Content/RECP/css/style.css" rel="stylesheet" />
+    <link href="~/staticFiles2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/staticFiles2/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/staticFiles2/css/font-awesome-ie7.min.css" rel="stylesheet" />
+    <link href="~/staticFiles2/css/style.css" rel="stylesheet" />
 
     <!--js-->
-    <script src="~/Content/RECP/js/jquery.min.js"></script>
-    <script src="~/Content/RECP/js/bootstrap.min.js"></script>
-    <script src="~/Content/RECP/js/core/knockout-3.4.2.js"></script>
+    <script src="~/staticFiles2/js/jquery.min.js"></script>
+    <script src="~/staticFiles2/js/bootstrap.min.js"></script>
+    <script src="~/staticFiles2/js/core/knockout-3.4.2.js"></script>
 
     <!--style-->
     <style type="text/css">
@@ -129,7 +129,7 @@ if (ViewBag.ActiveTab == item)
 
 <body class="pace-done">
     <div class="gray-bg top-navigation pace-done top-header" style="margin-left: auto;margin-right: auto;">
-        <div style="height: 113px;background-image: url(/content/recp/images/bg2.gif);"></div>
+        <div style="height: 113px;background-image: url(/staticFiles2/images/bg2.gif);"></div>
         <div id="wrapper" class="wrapper wrapper-content animated fadeInRight gray-bg" style="padding: 0px 0px;">
             <div id="page-wrapper" class="gray-bg">
                 <div class="row border-bottom white-bg">
@@ -154,7 +154,7 @@ if (ViewBag.ActiveTab == item)
                                 <li @GetCssClass("wallpaper") class="dropdown col-md-1-7 col-sm-1-7 col-xs-1-7">
                                     <a aria-expanded="false" role="button" href="/wallpaper/index" class="dropdown-toggle" style="cursor:pointer"> 琳迷原创 </a>
                                 </li>
-                                <li @GetCssClass("aboutus") class="dropdown col-md-1-7 col-sm-1-7 col-xs-1-7">
+                                <li class= '@ViewBag.ActiveTab=="aboutus"?"active dropdown col-md-1-7 col-sm-1-7 col-xs-1-7":"active dropdown col-md-1-7 col-sm-1-7 col-xs-1-7"'>
                                     <a aria-expanded="false" role="button" href="/aboutus/index" class="dropdown-toggle" style="cursor:pointer"> 关于我们 </a>
                                 </li>
                             </ul>
@@ -168,7 +168,7 @@ if (ViewBag.ActiveTab == item)
         <div class="container" style="padding: 0;width: 100%;height: 100%;">
             <div class="row" style="height: 100%;">
                 <div class="col-xs-4 col-sm-4  col-md-4  col-lg-3" style="padding: 0;height: 100%;"> 
-                    @await Html.PartialAsync("~/Views/Left/Index.cshtml")
+                    @*@await Html.PartialAsync("~/Views/Left/Index.cshtml")*@
                 </div>
                 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-9 " style="padding:0 0 0 10px;height: 100%;">
                     <div class="panel panel-default" style="height:100%;">
