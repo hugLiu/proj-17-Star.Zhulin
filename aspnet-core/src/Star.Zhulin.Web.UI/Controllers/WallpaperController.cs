@@ -8,7 +8,7 @@ namespace Star.Zhulin.Web.UI.Controllers
 {
     public class WallpaperController : Controller
     { 
-        public ActionResult Index()
+        public IActionResult Index()
         {
             ViewBag.ActiveTab = "wallpaper";
             return View();
