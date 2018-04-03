@@ -8,7 +8,7 @@ namespace Star.Zhulin.Web.UI.Controllers
 {
     public class LeftController : Controller
     { 
-        public ActionResult Index()
+        public IActionResult Index()
         {
             return View();
         }

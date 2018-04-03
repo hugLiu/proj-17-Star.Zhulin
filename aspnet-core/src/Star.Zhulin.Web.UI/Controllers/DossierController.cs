@@ -8,7 +8,7 @@ namespace Star.Zhulin.Web.UI.Controllers
 {
     public class DossierController : Controller
     { 
-        public ActionResult Index()
+        public IActionResult Index()
         {
             ViewBag.ActiveTab = "dossier";
             return View();
