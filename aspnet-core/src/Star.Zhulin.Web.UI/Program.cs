@@ -19,6 +19,7 @@ namespace Star.Zhulin.Web.UI
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://192.168.0.100:6001")
                 .UseStartup<Startup>()
                 .Build();
     }
